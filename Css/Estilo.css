@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(66, 182, 66, 0.623);
+}
+
+
+.coming-soon {
+    text-align: center; /* Centraliza o texto */
+    font-size: 3em; /* Aumenta o tamanho da fonte */
+    font-family: 'Lora', serif; /* Altera para uma fonte mais bonita */
+    animation: colorChange 10s infinite; /* Animação de mudança de cor */
+    position: absolute; /* Adiciona posição absoluta */
+    top: 50%; /* Move para 50% do topo */
+    left: 50%; /* Move para 50% da esquerda */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .coming-soon {
+        font-size: 2em; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .coming-soon {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte em telas muito pequenas */
+    }
+}
+
+@keyframes colorChange {
+    0% { color: purple; }
+    33% { color: blue; }
+    66% { color: pink; }
+    100% { color: purple; }
+}
